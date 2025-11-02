@@ -5,6 +5,6 @@ export const StickerListStyled = styled.ul`
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     gap: 10px;
 `;

@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { ChoiceStyled } from "./Choice.styled";
 
 class Choice extends Component {
     state = {
@@ -6,8 +7,13 @@ class Choice extends Component {
     };
 
     render() {
-        return (
-            <div>Choice Component</div>
+    console.log(this.props.Chosen);  
+        return (<div>
+            <h1>Chosen</h1>
+            <ChoiceStyled>
+                <img src={this.props.Chosen} alt="" />
+           </ChoiceStyled>
+  </div>
         );
     }   
 }
